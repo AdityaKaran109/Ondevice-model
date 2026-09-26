@@ -91,8 +91,8 @@ Design choices worth calling out:
 ## Repository layout
 
 ```
-Notebook/                 original exploration notebook + AIMET quantization config
 pipeline/
+  configs/                AIMET quantization config for FFNet
   common.py               dataset loading, preprocessing, palette, metrics
   quantize_local.py       step 1 – AIMET W8A8 simulation + INT8-vs-FP32 evaluation
   deploy_s25.py           step 2 – AI Hub quantize/compile/profile/inference → .tflite
@@ -140,7 +140,7 @@ This runs the quantize/compile/profile/inference jobs on a real hosted S25 Ultra
 
 ## Lessons learned
 
-- `qai_hub_models` 0.63 folded `ffnet_40s_quantized` into `ffnet_40s --quantize w8a8`, and the old `models._shared` AIMET config path is gone — the config now lives in [`Notebook/ffnet_aimet_config.json`](Notebook/ffnet_aimet_config.json).
+- `qai_hub_models` 0.63 folded `ffnet_40s_quantized` into `ffnet_40s --quantize w8a8`, and the old `models._shared` AIMET config path is gone — the config now lives in [`pipeline/configs/ffnet_aimet_config.json`](pipeline/configs/ffnet_aimet_config.json).
 - aimet-torch 2.x's quantsim rejects `unsigned_symmetric: True`; setting it to `False` keeps symmetric per-channel weights and works.
 - Calling `FFNet40S.from_pretrained().model` returns the *inner* network, which skips ImageNet normalization. Quantizing and exporting the wrapper instead keeps preprocessing on-device trivially simple.
 - Mobile NPUs reward end-to-end integer pipelines: uint8 in, uint8 out, argmax without dequantization.

@@ -35,3 +35,9 @@ Thumbs.db
 # Brand assets (kept local, not published)
 docs/brand/
 android/app/src/main/assets/brand/
+
+# Original exploration notebook (kept local)
+Notebook/
+
+# Personal learning notes (kept local)
+learning/

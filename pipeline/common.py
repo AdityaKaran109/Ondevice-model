@@ -12,7 +12,7 @@ from torchvision import transforms
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_DIR = ROOT / "results"
 ANDROID_ASSETS_DIR = ROOT / "android" / "app" / "src" / "main" / "assets"
-AIMET_CONFIG = ROOT / "Notebook" / "ffnet_aimet_config.json"
+AIMET_CONFIG = ROOT / "pipeline" / "configs" / "ffnet_aimet_config.json"
 
 # FFNet-40S native resolution (Cityscapes). Output is 1/8 of this: 128 x 256.
 HEIGHT, WIDTH = 1024, 2048
