@@ -1,0 +1,17 @@
+<svg viewBox="0 0 300 150" width="300" height="150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Vigyanam AI Logo">
+  <defs>
+    <pattern id="verticalLines" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="4" fill="#D4AF37" fill-opacity="0.8"/>
+    </pattern>
+  </defs>
+  <path d="M100 50 A 50 40 0 0 1 200 50" fill="none" stroke="#D4AF37" stroke-width="3"/>
+  <path d="M100 50 A 50 40 0 0 1 200 50" fill="url(#verticalLines)" opacity="0.8"/>
+  <path d="M100 100 A 50 40 0 0 0 200 100" fill="none" stroke="#D4AF37" stroke-width="3"/>
+  <path d="M100 100 A 50 40 0 0 0 200 100" fill="url(#verticalLines)" opacity="0.8"/>
+  <rect x="30" y="50" width="240" height="50" rx="25" fill="#000000" stroke="#D4AF37" stroke-width="3"/>
+  <text x="150" y="82" font-family="serif" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">VIGYANAM AI</text>
+  <text x="150" y="40" font-family="sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">INNOVATE. PYTHONATE.</text>
+  <text x="150" y="120" font-family="sans-serif" font-size="10" font-weight="800" fill="#D4AF37" text-anchor="middle" letter-spacing="2">THE AI COMPANY</text>
+  <path d="M270 50 Q 290 75 270 100" stroke="#D4AF37" stroke-width="2" fill="none"/>
+  <path d="M30 50 Q 10 75 30 100" stroke="#D4AF37" stroke-width="2" fill="none"/>
+</svg>

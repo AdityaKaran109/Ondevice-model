@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/vigyanam_logo" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/frameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/maskView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.55"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/statsView"
+            style="@style/Panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:textSize="11sp"
+            tools:text="NPU · Hexagon (QNN)\ninference  4.9 ms" />
+
+        <TextView
+            android:id="@+id/legendView"
+            style="@style/Panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="8dp"
+            android:textSize="11sp"
+            tools:text="■ road 31%  ■ car 12%" />
+
+        <TextView
+            android:id="@+id/messageView"
+            style="@style/Panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="28dp">
+
+        <Button android:id="@+id/cameraButton" style="@style/RowButton" android:text="@string/camera" />
+        <Button android:id="@+id/photoButton" style="@style/RowButton" android:text="@string/photo" />
+        <Button android:id="@+id/sampleButton" style="@style/RowButton" android:text="@string/sample" />
+        <Button android:id="@+id/backendButton" style="@style/RowButton" tools:text="NPU" />
+        <Button android:id="@+id/benchmarkButton" style="@style/RowButton" android:text="@string/benchmark_short" />
+    </LinearLayout>
+</LinearLayout>

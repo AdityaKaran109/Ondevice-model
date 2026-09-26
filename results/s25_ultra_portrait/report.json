@@ -1,0 +1,25 @@
+{
+  "device": "Samsung Galaxy S25 Ultra",
+  "input_wh": [
+    1024,
+    2048
+  ],
+  "calibration_images": 20,
+  "int8": {
+    "job_url": "https://workbench.aihub.qualcomm.com/jobs/jpxlz9n3p/",
+    "inference_ms": 3.642,
+    "peak_memory_mb": [
+      0.7,
+      201.2
+    ],
+    "layers_by_compute_unit": {
+      "NPU": 99
+    }
+  },
+  "on_device_accuracy": {
+    "job_url": "https://workbench.aihub.qualcomm.com/jobs/jglyq4em5/",
+    "test_images": 5,
+    "pixel_agreement_vs_fp32": 0.987249755859375,
+    "miou_vs_fp32": 0.888453814413328
+  }
+}

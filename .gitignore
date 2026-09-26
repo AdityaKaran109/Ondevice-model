@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+export_assets/
+
+# Generated models (rebuild with: python -m pipeline.deploy_s25)
+*.tflite
+*.onnx
+*.bin
+*.dlc
+android/app/src/main/assets/sample.jpg
+
+# Android / Gradle
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+*.iml
+*.apk
+*.aab
+
+# Secrets
+.env
+client.ini
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/

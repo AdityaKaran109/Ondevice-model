@@ -1,0 +1,6 @@
+{
+  "calibration_images": 20,
+  "test_images": 10,
+  "pixel_agreement_int8_vs_fp32": 0.9920562744140625,
+  "miou_int8_vs_fp32": 0.9039285495369846
+}

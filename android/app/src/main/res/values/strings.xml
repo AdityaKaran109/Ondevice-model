@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EdgeSeg</string>
+    <string name="camera">Camera</string>
+    <string name="photo">Photo</string>
+    <string name="sample">Sample</string>
+    <string name="benchmark">Benchmark</string>
+    <string name="benchmark_short">Bench</string>
+    <string name="logo_description">Vigyanam AI</string>
+    <string name="missing_model">Model not found.\n\nRun  python -m pipeline.deploy_s25  on your PC — it compiles FFNet-40S for the S25 Ultra and copies ffnet_40s_w8a8.tflite into android/app/src/main/assets/. Then rebuild the app.</string>
+    <string name="camera_denied">Camera permission denied — use Photo or Sample instead.</string>
+</resources>
