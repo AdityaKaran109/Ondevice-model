@@ -70,7 +70,7 @@
             android:layout_marginBottom="12dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/logo_description"
-            android:src="@drawable/vigyanam_logo" />
+            android:visibility="gone" />
 
         <Button android:id="@+id/cameraButton" style="@style/SideButton" android:text="@string/camera" />
         <Button android:id="@+id/photoButton" style="@style/SideButton" android:text="@string/photo" />

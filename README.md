@@ -1,5 +1,3 @@
-<p align="center"><img src="docs/brand/vigyanam_ai_logo.png" width="220" alt="Vigyanam AI"></p>
-
 # EdgeSeg — Real-time street-scene segmentation on the Galaxy S25 Ultra NPU
 
 Quantize a semantic-segmentation network to INT8, compile it for the **Snapdragon 8 Elite** Hexagon NPU, and run it live from the camera in an Android app — fully on-device, no cloud at inference time.

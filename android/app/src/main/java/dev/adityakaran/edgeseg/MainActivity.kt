@@ -61,6 +61,11 @@ class MainActivity : AppCompatActivity() {
     private var shownMessage: CharSequence? = null
     private var buttonsEnabled = false
 
+    /** Optional brand logo from assets/brand/logo.png (kept out of git); hidden when absent. */
+    private val logo: Bitmap? by lazy {
+        runCatching { assets.open("brand/logo.png").use { BitmapFactory.decodeStream(it) } }.getOrNull()
+    }
+
     private var cameraProvider: ProcessCameraProvider? = null
     private var analysis: ImageAnalysis? = null
     @Volatile private var cameraRunning = false
@@ -121,6 +126,10 @@ class MainActivity : AppCompatActivity() {
         binding.benchmarkButton.setOnClickListener { runBenchmark() }
         binding.messageView.setOnClickListener { hideMessage() }
 
+        logo?.let {
+            binding.logoView.setImageBitmap(it)
+            binding.logoView.visibility = View.VISIBLE
+        }
         binding.frameView.setImageBitmap(shownFrame)
         binding.maskView.setImageBitmap(shownMask)
         binding.statsView.text = shownStats

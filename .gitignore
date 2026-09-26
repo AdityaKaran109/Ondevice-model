@@ -31,3 +31,7 @@ client.ini
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Brand assets (kept local, not published)
+docs/brand/
+android/app/src/main/assets/brand/
